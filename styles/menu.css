@@ -1,0 +1,181 @@
+/** NAVBAR **/
+header {
+  padding: 30px 50px;
+  font-family: Avenir Next Condensed;
+  font-weight: lighter;
+}
+
+#logo {
+  float: left;
+}
+
+#logo img {
+  width: 200px;
+}
+
+nav {
+  padding-top: 90px;
+  padding-bottom: 50px;
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  font-size: 25px;
+  position: relative;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  text-decoration: none;
+  color: black;
+  margin: 6px 20px;
+}
+
+
+nav ul li a:hover, nav ul li a:active {
+  color: lightgray;
+}
+
+
+ul .book-button {
+  font-size: 16px;
+  padding: 6px 0px;
+  margin: 0;
+  width: 120px;
+  margin-bottom: 1px;
+
+}
+
+#dropdown-container {
+  float: right;
+  margin: 0 10px;
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+
+}
+
+
+#dropdown-content a {
+  z-index: 10;
+  display: block;
+}
+
+
+#dropdown-content {
+  border-radius: 6px;
+  width: 120px;
+}
+
+
+#dropdown-content .book-button {
+  border-style: solid;
+  border-width: thin;
+  border-color: #ee115b;
+
+  margin: 1px;
+  color: black;
+
+  background-color: white;
+
+  width: 117px;
+}
+
+
+#dropdown-content .book-button:hover {
+  color: lightgray;
+}
+
+#dropdown-content .icon {
+  display: inline;
+  vertical-align: middle;
+}
+
+#nav-book a {
+  color: white;
+}
+
+#nav-book a:hover {
+  color: white;
+}
+
+
+/** NAVBAR MEDIA QUERIES **/
+@media all and (max-width: 980px) {
+  nav ul li {
+    font-size: 18px;
+  }
+
+  ul .book-button {
+    font-size: 16px;
+  }
+
+  #logo img {
+    width: 150px;
+  }
+
+  nav {
+    padding-top: 70px;
+    padding-bottom: 20px;
+
+  }
+
+}
+
+@media all and (max-width: 736px) {
+  header nav ul li {
+    font-size: 15px;
+  }
+
+  #logo img {
+    width: 100px;
+  }
+
+  nav {
+    padding-top: 45px;
+  }
+
+}
+
+@media all and (max-width: 580px) {
+
+  nav ul li a:link, nav ul li a:visited {
+    margin: 0px 5px;
+  }
+
+}
+
+
+/** FOOTER **/
+footer {
+  border-top: 1px solid lightgray;
+}
+
+footer p{
+  font-size: 20px;
+}
+
+footer nav {
+  padding: 10px;
+  margin: 10px;
+  float:none;
+  text-align: center;
+}
+
+footer nav ul {
+  padding-bottom: 10px;
+}
+
+footer nav ul li {
+  font-size: 18px;
+  color: gray;
+}
